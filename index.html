@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ZXUAN × DIZI OFFICIAL STORE | Katalog & Order</title>
+<meta name="description" content="ZXUAN × DIZI Official Store — katalog produk, daftar harga, WhatsApp Channel dan kontak admin.">
+<meta name="theme-color" content="#05070D">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%2305070D'/><text x='50' y='68' font-size='58' text-anchor='middle' fill='%2300BFFF'>⚡</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="loader"><div class="logo-txt">ZXUAN <i>×</i> DIZI</div><div class="bar"><span></span></div></div>
+
+<nav class="nav" id="nav">
+  <a href="#top" class="brand">ZXUAN <i>×</i> DIZI</a>
+  <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  <div class="menu" id="menu">
+    <a href="#katalog">Katalog</a><a href="#info">Info Toko</a><a href="#channel">Channel</a><a href="#admin">Admin</a>
+  </div>
+</nav>
+
+<main id="top">
+  <header class="hero">
+    <div class="badges"><span class="pill official">OFFICIAL STORE</span><span class="pill online"><b></b>ONLINE</span></div>
+    <h1>⚡ ZXUAN <i>×</i> DIZI<br>OFFICIAL STORE ⚡</h1>
+    <p class="tag">🎯 Be a Headshot Machine 🎯</p>
+    <span class="pill members">1K+ WhatsApp Members</span>
+    <a class="btn wa" href="https://whatsapp.com/channel/0029VbBcV5dKQuJRzdj0UX07" target="_blank" rel="noopener" data-wa>JOIN WHATSAPP CHANNEL</a>
+  </header>
+
+  <section id="katalog" class="sec reveal">
+    <h2>Katalog Produk</h2>
+    <input id="search" type="search" placeholder="Cari produk…" autocomplete="off" aria-label="Cari produk">
+    <div class="chips" id="chips"></div>
+    <div id="catalog"></div>
+    <p id="empty" class="empty" hidden>Produk tidak ditemukan. Coba kata kunci lain.</p>
+  </section>
+
+  <section id="info" class="sec reveal">
+    <h2>Informasi Toko</h2>
+    <div class="grid">
+      <div class="card"><h3>📱 Kompatibilitas</h3><p>Support Android 7–15. Hasil dapat berbeda di tiap perangkat, versi game, dan versi sistem. Produk iOS dan sebagian produk Android punya syarat khusus (lihat label di katalog).</p></div>
+      <div class="card"><h3>💳 Pembayaran</h3><p>DANA / QRIS.<br><b>ALL TRX NO REFF.</b></p></div>
+      <div class="card"><h3>💬 Testimoni</h3><p>Testimoni pelanggan dipublikasikan di WhatsApp Channel resmi kami.</p><a class="link" href="https://whatsapp.com/channel/0029VbBcV5dKQuJRzdj0UX07" target="_blank" rel="noopener">Lihat di Channel</a></div>
+      <div class="card warn"><h3>⚠️ Keamanan & Risiko</h3><p>Kami tidak menjamin produk aman atau bebas banned. Penggunaan file modifikasi dapat melanggar ketentuan game dan berisiko pada akun. Semua risiko ditanggung pengguna. Tanyakan detail ke admin sebelum membeli.</p></div>
+    </div>
+  </section>
+
+  <section id="channel" class="sec reveal">
+    <div class="card chan">
+      <span class="ico" data-ico></span>
+      <h2>WhatsApp Channel</h2>
+      <p class="big">1K+ Members</p>
+      <p>FILE GACOR ANDRO &amp; IOS</p>
+      <a class="btn wa" href="https://whatsapp.com/channel/0029VbBcV5dKQuJRzdj0UX07" target="_blank" rel="noopener" data-wa>JOIN CHANNEL</a>
+    </div>
+  </section>
+
+  <section id="admin" class="sec reveal">
+    <h2>Kontak Admin</h2>
+    <div class="grid" id="admins"></div>
+  </section>
+</main>
+
+<footer>© <span id="yr"></span> ZXUAN × DIZI OFFICIAL STORE. All rights reserved.</footer>
+
+<a id="fab" class="fab" href="#" target="_blank" rel="noopener" aria-label="Chat WhatsApp"></a>
+<button id="top-btn" class="topbtn" aria-label="Kembali ke atas">↑</button>
+<div id="sheet" class="sheet" role="dialog" aria-modal="true" aria-label="Pilih admin">
+  <div class="sheet-bg" data-close></div>
+  <div class="sheet-box">
+    <h3>Pilih Admin untuk Order</h3>
+    <p id="sheet-prod"></p>
+    <div id="sheet-btns"></div>
+    <button class="btn ghost" data-close>BATAL</button>
+  </div>
+</div>
+<div id="toast" class="toast" role="status"></div>
+<script src="script.js"></script>
+</body>
+</html>
